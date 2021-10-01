@@ -15,20 +15,12 @@ console.log(currentDayEl)
 //THEN the text for that event is saved in local storage
 var eventInputEl = document.querySelectorAll('.event-log');
 //var currentTime = (JSON.stringify(moment().format('H').toString()))
+$(document).ready(function(){
 
 var currentTime = (new Date()).getHours();
 
-renderEvent();
 
-function renderEvent(){
-    $('.row').each(function () {
-        localStorage.getItem('input')
-        //localStorage.getItem('input')
-        $(this).siblings().val();
-    }
-)}
-
-$('input').each(function(){
+$('textarea').each(function(){
     if($(this).data('hour') < currentTime) {  
         $(this).addClass("past");
     } else if($(this).data('hour') == currentTime) { 
@@ -44,11 +36,22 @@ $('.saveBtn').click(function(event){
     event.preventDefault();
     //event.stopPropagation();
     var time = $(this).parent().attr('id')
-    var input = $(this).siblings('input').val()
-    console.log(input)
+    var input = $(this).siblings('.event-log').val()
     localStorage.setItem(time,input);
 })
 
+$("#9 .event-log").val(localStorage.getItem("9"));
+$("#10 .event-log").val(localStorage.getItem("10"));
+$("#11 .event-log").val(localStorage.getItem("11"));
+$("#12 .event-log").val(localStorage.getItem("12"));
+$("#13 .event-log").val(localStorage.getItem("13"));
+$("#14 .event-log").val(localStorage.getItem("14"));
+$("#15 .event-log").val(localStorage.getItem("15"));
+$("#16 .event-log").val(localStorage.getItem("16"));
+$("#17 .event-log").val(localStorage.getItem("17"));
+
+
+})
 
 console.log(localStorage)
 
