@@ -10,4 +10,6 @@ This work schedule planner is color coded and tied to a real time clock and colo
 https://kbove.github.io/Kyle-Bove-HW-5-event-planner/
 
 ##### Screenshot
+![work scheduler screenshot](https://user-images.githubusercontent.com/89953218/135657371-f9cf3410-7cc9-49cb-8d8a-5414dacfda6f.JPG)
+
 
